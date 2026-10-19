@@ -1,1 +1,137 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic HTML and CSS Styling Requirements */
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	letter-spacing: 0.05em;
+	word-spacing: 0.1em;
+	color: #333333;
+	background-color: #f8f9fa;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-indent: 1.5rem;
+}
+
+/* Advanced CSS Selectors and Formatting */
+h1, h2 {
+	color: #e63946;
+	text-align: center;
+}
+
+p::first-letter {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+nav {
+	background-color: #1d3557;
+	padding: 1rem;
+}
+
+nav > ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+/* Mouse over link pseudo-class */
+nav a:hover, nav a:focus {
+	border-bottom-color: #e63946;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
+/* Selected link pseudo-class */
+nav a.selected {
+	font-weight: bold;
+	color: #e63946;
+}
+
+section {
+	position: relative;
+	max-width: 1200px;
+	margin: 2rem auto;
+	padding: 0 2rem;
+}
+
+img {
+	float: left;
+	margin-right: 1.5rem;
+	margin-bottom: 1rem;
+	max-width: 400px;
+	border-color: #45a29e;
+	border-style: solid;
+	border-width: 4px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1.5rem;
+}
+
+th, td {
+	padding: 1rem;
+	text-align: left;
+}
+
+/* Table pseudo-classes for even and odd rows */
+table tr:nth-child(even) {
+	background-color: #CFF;
+}
+
+table tr:nth-child(odd) {
+	background-color: #FFF;
+}
+
+/* Responsiveness and Metadata specific elements */
+#cookies {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f1faee;
+	color: #333333;
+	text-align: center;
+	padding: 1rem 0;
+	z-index: 9999;
+}
+
+/* Device specification for PC viewport */
+@media (min-width: 769px) {
+	nav > ul {
+		flex-direction: row;
+		gap: 2rem;
+	}
+}
+
+/* Device specification for Smartphone viewport */
+@media (max-width: 768px) {
+	nav > ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	img {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+	}
+	
+	body {
+		padding-bottom: 80px; 
+	}
+}

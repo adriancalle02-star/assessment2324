@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Adrian Varela Calle">
+    <meta name="description" content="Get in touch with our team for personalized Zaandam travel tips, romantic dining recommendations, and custom itineraries for your Dutch getaway.">
+    <meta name="keywords" content="contact, Zaandam, travel, tips, couples">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zaandam Guide</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact & Travel Tips</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html">Centre & Architecture</a></li>
+                <li><a href="windmills.html">Windmill Village</a></li>
+                <li><a href="bike-route.html">Bike Route</a></li>
+                <li><a href="dining.html">Dining Options</a></li>
+                <li><a href="contact.html" class="selected">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <article>
+                <h2>Need Personalized Recommendations?</h2>
+                <p>As visitors needing practical advice before arriving, feel free to reach out. Travel stress-free and get reliable answers to complete your trip planning.</p>
+                <em>We are happy to help you design the perfect romantic getaway.</em>
+            </article>
+        </section>
+        
+        <section>
+            <form action="https://next-app-router-playground-kohl.vercel.app/api/contact" method="post">
+                <fieldset>
+                    <legend>Send Us a Message</legend>
+                    
+                    <p>
+                        <label for="visitor-name">Name:</label>
+                        <input type="text" id="visitor-name" name="name">
+                    </p>
+                    
+                    <p>
+                        <label for="visitor-email">Email Address:</label>
+                        <input type="email" id="visitor-email" name="email">
+                    </p>
+                    
+                    <p>
+                        <label for="message">How can we help you plan your trip?</label>
+                    </p>
+                    <p>
+                        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                    </p>
+                    
+                    <p>
+                        <input type="submit" value="Send Message">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&#169; 2026 Adrian Varela Calle &amp; Zaandam Tourism</p>
+    </footer>
+</body>
+</html>
