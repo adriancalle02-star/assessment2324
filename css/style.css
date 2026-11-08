@@ -119,10 +119,12 @@ header, footer {
 }
 
 .logo-img {
-	width: 32px;
-	height: 32px;
+	width: 38px;
+	height: 38px;
 	border-radius: 50%;
 	object-fit: cover;
+	clip-path: circle(49% at center);
+	display: inline-block;
 }
 
 .logo-text {
