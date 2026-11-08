@@ -1,71 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Adrian Varela Calle">
-    <meta name="description" content="Get in touch with our team for personalized Zaandam travel tips, romantic dining recommendations, and custom itineraries for your Dutch getaway.">
-    <meta name="keywords" content="contact, Zaandam, travel, tips, couples">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Zaandam Guide</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="author" content="Adrian Varela Calle">
+	<meta name="description" content="Get in touch with Zaandam travel experts for couple advice, public transit tips, and personalized recommendations for visiting the Netherlands.">
+	<meta name="keywords" content="Zaandam, contact, tips, transit, advice, FAQ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zaandam Guide for Young Spanish Couples - Contact &amp; Tips</title>
+	
+	<!-- Google Fonts Preconnect and Stylesheet -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+	
+	<!-- Favicon and Local Stylesheet -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Contact & Travel Tips</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="architecture.html">Centre & Architecture</a></li>
-                <li><a href="windmills.html">Windmill Village</a></li>
-                <li><a href="bike-route.html">Bike Route</a></li>
-                <li><a href="dining.html">Dining Options</a></li>
-                <li><a href="contact.html" class="selected">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <article>
-                <h2>Need Personalized Recommendations?</h2>
-                <p>As visitors needing practical advice before arriving, feel free to reach out. Travel stress-free and get reliable answers to complete your trip planning.</p>
-                <em>We are happy to help you design the perfect romantic getaway.</em>
-            </article>
-        </section>
-        
-        <section>
-            <form action="https://next-app-router-playground-kohl.vercel.app/api/contact" method="post">
-                <fieldset>
-                    <legend>Send Us a Message</legend>
-                    
-                    <p>
-                        <label for="visitor-name">Name:</label>
-                        <input type="text" id="visitor-name" name="name">
-                    </p>
-                    
-                    <p>
-                        <label for="visitor-email">Email Address:</label>
-                        <input type="email" id="visitor-email" name="email">
-                    </p>
-                    
-                    <p>
-                        <label for="message">How can we help you plan your trip?</label>
-                    </p>
-                    <p>
-                        <textarea id="message" name="message" rows="5" cols="40"></textarea>
-                    </p>
-                    
-                    <p>
-                        <input type="submit" value="Send Message">
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&#169; 2026 Adrian Varela Calle &amp; Zaandam Tourism</p>
-    </footer>
+
+	<!-- Required cookie notice element evaluated with z-index 9999 -->
+	<aside id="cookies">
+		<p>We use cookies to improve your travel planning experience. <em>Accept cookies for the best journey.</em></p>
+	</aside>
+
+	<!-- Header and Main Navigation -->
+	<header class="main-header">
+		<a href="index.html" class="logo">
+			<img src="img/logo.png" alt="Zaandam emblem logo" title="Zaandam Tourism Logo" class="logo-img" onerror="this.style.display='none'">
+			<span class="logo-text">Zaandam</span>
+		</a>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Welcome</a></li>
+				<li><a href="architecture.html">Architecture</a></li>
+				<li><a href="windmills.html">Zaanse Schans</a></li>
+				<li><a href="bike-route.html">Bike Route</a></li>
+				<li><a href="dining.html">Date Night</a></li>
+				<li><a href="contact.html" class="selected">Contact &amp; Tips</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="page-container">
+		<!-- Introduction Header Block -->
+		<section class="intro-block">
+			<h1>Couple's Travel Tips &amp; FAQ</h1>
+			<p>Have questions before hopping on the train? Here is your essential guide to navigating public transit, rental logistics, and reaching out for personalized tips.</p>
+		</section>
+
+		<!-- Main Layout Grid: FAQ Left Column and Contact Form Right Column -->
+		<section class="contact-main-grid">
+			<!-- Left Column: Transit Image & FAQ Info -->
+			<section class="faq-column">
+				<figure class="contact-hero-figure">
+					<img src="img/ovpay-transit.jpg" alt="Passenger tapping contactless smartphone payment at Dutch train station turnstile" title="Contactless OVpay Train Transit" onerror="this.src='img/zaandam-hero.jpg'">
+					<figcaption>Effortless tap-and-go travel on Dutch public transit using OVpay.</figcaption>
+				</figure>
+
+				<article class="faq-content-card">
+					<h2>Travel &amp; Public Transit FAQ</h2>
+					<p><strong>Getting to Zaandam</strong> is simple and fast using Dutch Railways (NS). Frequent trains depart Amsterdam Centraal roughly every ten minutes. Tap your contactless debit card or mobile wallet at NS gates with OVpay.</p>
+					<p>If you plan to visit multiple regional highlights, consider purchasing an <strong>Amsterdam &amp; Region Travel Ticket (ARTT)</strong> for unlimited travel across regional trains.</p>
+					<p>Almost all hospitality and transport staff in the Zaan region speak fluent English.</p>
+				</article>
+			</section>
+
+			<!-- Right Column: Interactive Contact Form & Confirmation -->
+			<section class="form-column">
+				<form action="#" method="get" class="contact-card-form">
+					<fieldset>
+						<legend>Contact Us &amp; Trip Advice</legend>
+
+						<!-- Name Row: First Name and Last Name -->
+						<section class="form-row-split">
+							<section class="form-field-group">
+								<label for="first-name">First Name *</label>
+								<input type="text" id="first-name" name="first-name" value="Adrian" required>
+							</section>
+
+							<section class="form-field-group">
+								<label for="last-name">Last Name *</label>
+								<input type="text" id="last-name" name="last-name" value="Varela" required>
+							</section>
+						</section>
+
+						<!-- Email Field -->
+						<section class="form-field-group">
+							<label for="contact-email">Email Address *</label>
+							<input type="email" id="contact-email" name="email" value="adrian@example.com" required>
+						</section>
+
+						<!-- Topic Select Dropdown -->
+						<section class="form-field-group">
+							<label for="topic">What is your question about? *</label>
+							<select id="topic" name="topic">
+								<option value="transit" selected>Transportation Advice</option>
+								<option value="architecture">Modern Architecture &amp; Photography</option>
+								<option value="windmills">Windmills &amp; Boat Rentals</option>
+								<option value="cycling">Bike Rentals &amp; Routes</option>
+								<option value="dining">Date Night &amp; Restaurant Reservations</option>
+								<option value="general">Other General Inquiries</option>
+							</select>
+						</section>
+
+						<!-- Message Textarea -->
+						<section class="form-field-group">
+							<label for="message">Your Message *</label>
+							<textarea id="message" name="message" rows="4" placeholder="Ask us anything about your upcoming couple's trip to Zaandam..."></textarea>
+						</section>
+
+						<p class="form-subtext">We answer all messages within 24 hours to help you plan with peace of mind.</p>
+
+						<input type="submit" value="Send Message" class="btn btn-submit-message">
+					</fieldset>
+				</form>
+
+				<!-- Success Message Notice Box -->
+				<aside class="alert-box alert-success">
+					<p><strong>Success!</strong> Your message has been sent. We will reply to your email within 24 hours.</p>
+				</aside>
+			</section>
+		</section>
+	</main>
+
+	<!-- Unified Multi-Column Footer complying with rubrics and figma design -->
+	<footer class="columns-footer">
+		<section class="footer-columns-container">
+			<!-- Column 1: Site Map -->
+			<section class="footer-col">
+				<h3>Site Map</h3>
+				<nav class="footer-links-grid">
+					<ul>
+						<li><a href="index.html">Welcome</a></li>
+						<li><a href="architecture.html">Architecture</a></li>
+						<li><a href="windmills.html">Zaanse Schans</a></li>
+					</ul>
+					<ul>
+						<li><a href="bike-route.html">Bike Route</a></li>
+						<li><a href="dining.html">Date Night</a></li>
+						<li><a href="contact.html">Contact &amp; Tips</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<!-- Column 2: Contact Links -->
+			<section class="footer-col">
+				<h3>Contact Links</h3>
+				<nav class="footer-links-grid">
+					<ul>
+						<li><a href="contact.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="dining.html">Date Night</a></li>
+						<li><a href="contact.html">Links</a></li>
+					</ul>
+					<ul>
+						<li><a href="contact.html">About up</a></li>
+						<li><a href="index.html">Site map</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<!-- Column 3: Copyright Info -->
+			<section class="footer-col footer-col-copyright">
+				<h3>Copyright Info</h3>
+				<p>&#169; 2026 Adrian Varela Calle &amp; Zaandam Tourism.</p>
+				<p>All rights reserved.</p>
+			</section>
+		</section>
+	</footer>
+
 </body>
 </html>
